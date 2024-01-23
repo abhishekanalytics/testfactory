@@ -8,7 +8,8 @@ class User:
         self.email = email
 
     def to_dict(self):
-        return {'username': self.username, 'email': self.email}
+        return {'username': self.username,
+                 'email': self.email}
     def save_to_db(self):
         try:                             
         # Access MongoDB using mongo object
